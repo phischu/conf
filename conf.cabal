@@ -16,7 +16,8 @@ extra-source-files:  README.md
 cabal-version:       >=1.10
 
 library
-  exposed-modules:     Conf
+  exposed-modules:     Conf,
+                       ModuleConf
   -- other-modules:       
   -- other-extensions:    
   build-depends:       base,
@@ -24,6 +25,7 @@ library
                        transformers,
                        mtl,
                        free,
-                       pipes
+                       pipes,
+                       Cabal
   hs-source-dirs:      src
   default-language:    Haskell2010
